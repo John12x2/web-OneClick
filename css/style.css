@@ -20,7 +20,7 @@ li {
     float: left;
 }
 
-li h1, h2 {
+li h1, h2, p, a {
     display: inline-block;
     color: #FFFBDE;
     text-align: center;
@@ -39,8 +39,4 @@ div {
     margin: 20vh;
     padding: 15vh;
     text-align: center;
-}
-
-div h2 {
-
 }
