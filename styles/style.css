@@ -182,6 +182,7 @@ p {
   .container p {
     text-align: center;
     margin-left: 0;
+    /*line-height: 1.5rem;*/
   }
 
 }
