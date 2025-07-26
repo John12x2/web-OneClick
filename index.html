@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Home</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link rel="icon" type="image/x-icon" href="/Website logos/normalogo.png" />
 
     <!-- styles -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -18,7 +19,15 @@
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-          <img src="./logo.svg" class="logo" alt="logo" />
+          <button class="logo-button">
+            <a href="/"
+              ><img
+                src="./Website logos/normalogo.png"
+                alt="logo"
+                alt="logo"
+              />oneclick</a
+            >
+          </button>
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button>
@@ -26,30 +35,33 @@
         <!-- links -->
         <ul class="links">
           <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
             <a href="about.html">about</a>
           </li>
           <li>
-            <a href="">projects</a>
+            <a href="projects.html">projects</a>
           </li>
           <li>
-            <a href="">contact</a>
+            <a href="contact.html">contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container style center">
-      <h1>Home</h1>
-      <p>
-        Welcome to the home page! Here you can find information about our
-        project and team. <br>
-        This is a simple navbar example. <br>
-        Feel free to explore the links above. <br>
-        Check out the social media icons as well! <br>
-        Enjoy your stay!
-      </p>
+    <div class="about-wrapper">
+      <div class="container style">
+        <h1>Home</h1>
+        <p>
+          Welcome to the home page! Here you can find the latest updates and
+          information about our project. <br />
+          We are excited to share our journey with you. <br />
+          Explore the links above to learn more about us, our projects, and how
+          to get in touch.
+          <br />
+          Stay tuned for more updates and feel free to reach out with any
+          questions or feedback.
+          <br />
+          Thank you for visiting our site!
+        </p>
+      </div>
     </div>
     <nav>
       <div class="navbar-bottom">
@@ -59,7 +71,7 @@
           >
           <ul class="social-icons">
             <li>
-              <a href="https://www.instagram.com"
+              <a href="https://www.instagram.com/jo24.al/"
                 ><i class="fab fa-instagram"></i
               ></a>
             </li>
@@ -83,5 +95,6 @@
       src="https://kit.fontawesome.com/f676c49686.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js.map"></script>
   </body>
 </html>
