@@ -360,6 +360,10 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    padding-bottom: 50px;
+  }
+
   .container,
   .style p {
     padding: 1rem;
