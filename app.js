@@ -8,7 +8,7 @@ navToggle.addEventListener("click", function () {
     links.classList.remove("show-links");
   } else {
     links.classList.add("show-links");
-  }
+  } 
 });
 
 function copyEmail() {
