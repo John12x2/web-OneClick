@@ -12,7 +12,7 @@ navToggle.addEventListener("click", function () {
 });
 
 function copyEmail() {
-  const email = "muhammadalfianarya@gmail.com";
+  const email = "mail@oneclicks.my.id";
   navigator.clipboard.writeText(email).then(() => {
     const msg = document.getElementById("copy-confirm");
     msg.classList.add("show");
