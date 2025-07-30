@@ -367,7 +367,7 @@ p {
 
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 100px;
+    padding-top: 4rem;
     padding-bottom: 50px;
   }
 
