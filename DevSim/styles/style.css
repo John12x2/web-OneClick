@@ -11,6 +11,10 @@ Variables
 ===============
 */
 
+/*
+Goat color https://www.figma.com/color-palettes/gothic-noir/
+*/
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -37,13 +41,13 @@ Variables
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(30, 100%, 99%);
+  --clr-grey-10: hsl(338, 29%, 95%);
   --clr-grey-11: hsl(0, 0%, 89%);
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(0, 74%, 74%);
-  --clr-pink-crystal: hsl(346, 84%, 61%);
-  --clr-yinmn-blue: hsl(224, 93%, 70%);
+  --clr-button-click: hsl(210, 17%, 98%);
+  --clr-button: hsl(259, 19%, 83%);
+  --clr-yinmn-blue: hsl(208, 13%, 30%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
@@ -83,6 +87,7 @@ ul {
 }
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 h1,
 h2,
@@ -166,7 +171,7 @@ p {
   margin-right: 2rem;
 }
 
-.style h1{
+.style h1 {
   margin-bottom: 0;
 }
 
@@ -277,12 +282,13 @@ p {
 }
 
 .contact-info a {
-  color: var(--clr-pink-crystal);
+  color: var(--clr-button);
   font-weight: 700;
+  transition: var(--transition);
 }
 
 .contact-info a:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-button-click);
 }
 
 .email-line {
@@ -291,7 +297,7 @@ p {
   align-items: center;
   gap: 0.3rem;
   font-size: 1rem;
-  color: var(--clr-pink-crystal);
+  color: var(--clr-button);
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -305,7 +311,7 @@ p {
 }
 
 .email-line a {
-  color: var(--clr-pink-crystal);
+  color: var(--clr-button);
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
@@ -313,10 +319,11 @@ p {
   display: inline-block;
   max-width: 100%;
   flex: 1;
+  transition: var(--transition);
 }
 
 .email-line a:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-button-click);
 }
 
 .copy-btn {
@@ -326,11 +333,12 @@ p {
   font-size: 1rem;
   padding: 0;
   margin-left: 0.2rem; /* tiny margin to separate from text */
-  color: var(--clr-pink-crystal);
+  color: var(--clr-button);
+  transition: var(--transition);
 }
 
 .copy-btn:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-button-click);
 }
 
 .copy-msg {
@@ -394,11 +402,11 @@ p {
     padding: 0.5rem 1rem;
     margin-left: 0rem;
   }
-  
+
   .container {
     max-width: 100%; /* let it fill smaller screens */
   }
-  
+
   .container-contact {
     padding: 1rem;
   }
@@ -410,7 +418,7 @@ p {
     justify-content: center;
     align-items: center;
   }
-  
+
   .about-logo img {
     width: 80%;
     max-width: 100%;
@@ -432,7 +440,7 @@ p {
     align-items: center; /* Vertically center items */
     gap: 0.5rem; /* Space between icon, text, button */
     font-weight: bold;
-    color: var(--clr-pink-crystal);
+    color: var(--clr-button);
     white-space: nowrap; /* Prevent wrapping */
   }
 
@@ -454,7 +462,7 @@ p {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    color: var(--clr-pink-crystal);
+    color: var(--clr-button);
   }
 
   .copy-msg {
@@ -469,12 +477,11 @@ p {
     opacity: 1;
   }
   .email-copy-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  justify-content: center;
-}
-
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -516,12 +523,12 @@ p {
     align-items: center;
   }
   .contact-info a {
-    color: var(--clr-pink-crystal);
+    color: var(--clr-button);
     text-decoration: none;
     font-size: 1em;
   }
   .contact-info a:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-button-click);
   }
 
   .projects-list h1 {
@@ -666,8 +673,8 @@ nav {
   transition: var(--transition);
 }
 .links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  background: var(--clr-button);
+  color: var(--clr-button-click);
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -722,11 +729,11 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-pink-crystal);
+    color: var(--clr-button);
     font-size: 1rem;
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-button-click);
   }
 }
