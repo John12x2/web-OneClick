@@ -43,7 +43,7 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(0, 74%, 74%);
   --clr-pink-crystal: hsl(346, 84%, 61%);
-  --clr-yinmn-blue: hsl(202, 44%, 51%);
+  --clr-yinmn-blue: hsl(224, 93%, 70%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
@@ -367,7 +367,7 @@ p {
 
 @media screen and (max-width: 480px) {
   body {
-    padding-bottom: 2rem;
+    padding-bottom: 50px;
   }
 
   .container h1 {
@@ -658,6 +658,7 @@ nav {
 .links a {
   color: var(--clr-grey-10);
   font-size: 1rem;
+  font-weight: 600;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
