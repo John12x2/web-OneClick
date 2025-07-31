@@ -13,12 +13,5 @@ navToggle.addEventListener("click", function () {
 
 function copyEmail() {
   const email = "mail@oneclicks.my.id";
-  navigator.clipboard.writeText(email).then(() => {
-    const msg = document.getElementById("copy-confirm");
-    msg.classList.add("show");
-
-    setTimeout(() => {
-      msg.classList.remove("show");
-    }, 1500);
-  });
+  navigator.clipboard.writeText(email);
 }
